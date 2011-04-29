@@ -1,6 +1,6 @@
 module RenrenAPI
 
-  VERSION = [0, 3]
+  VERSION = [0, 3, 2]
 
   def self.version
     VERSION * "."
