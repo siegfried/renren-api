@@ -1,6 +1,7 @@
 require_relative "signature_calculator"
 require "uri"
 require "zlib"
+require "json"
 
 module RenrenAPI
   class HTTPAdapter
