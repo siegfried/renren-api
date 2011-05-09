@@ -33,6 +33,18 @@ module RenrenAPI
       }
       request(params)
     end
+    def send_notification(receiver_ids, notification)
+      request(
+        :api_key => @api_key,
+        :method => "notifications.send",
+        :call_id => current_time_in_millisecond,
+        :v => "1.0",
+        :session_key => @session_key,
+        :format => "JSON",
+        :to_ids => receiver_ids * ",",
+        :notification => notification
+      )
+    end
     private
     def current_time_in_millisecond
       "%.3f" % Time.now.to_f

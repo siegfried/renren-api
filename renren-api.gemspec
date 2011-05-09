@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = "renren-api"
-  spec.version = "0.3.4"
+  spec.version = "0.4"
   spec.summary = "a library to request Renren's API"
   spec.description = <<-EOF
   renren-api provides capability to request the service of Renren Social Network.
